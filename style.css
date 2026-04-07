@@ -60,10 +60,27 @@ body, html {
     z-index: 0;
     overflow: hidden;
     pointer-events: auto;
-    /* Soft moonlight glow behind the robot */
     background: radial-gradient(circle at center, rgba(160, 190, 240, 0.18) 0%, rgba(3, 3, 3, 0) 50%);
-    /* Smooth out scroll fading */
     transition: opacity 0.3s ease-out;
+}
+
+.spline-container.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-top-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 100;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }
 
 spline-viewer {

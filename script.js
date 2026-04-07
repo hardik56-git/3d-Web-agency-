@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
 
     // ===========================
-    // Scroll Fade for 3D Model
+    // Subtle scroll effect for 3D model (no fade out to keep interaction)
     // ===========================
     const splineContainer = document.querySelector('.spline-container');
     if (splineContainer) {
@@ -179,10 +179,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isScrolling) {
                 isScrolling = true;
                 requestAnimationFrame(() => {
-                    const maxScroll = window.innerHeight;
+                    // Keep model visible - just subtle parallax
                     const scrollY = window.scrollY;
-                    const newOpacity = Math.max(0, 1 - (scrollY / maxScroll));
-                    splineContainer.style.opacity = newOpacity;
+                    splineContainer.style.transform = `translateY(${scrollY * 0.1}px)`;
                     isScrolling = false;
                 });
             }
