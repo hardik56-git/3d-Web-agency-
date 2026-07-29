@@ -9,7 +9,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
 
-[🔴 Live Demo](https://your-demo-link.com) · [🐞 Report Bug](https://github.com/your-username/3d-web-agency/issues) · [✨ Request Feature](https://github.com/your-username/3d-web-agency/issues)
+ · [🐞 Report Bug](https://github.com/your-username/3d-web-agency/issues) · [✨ Request Feature](https://github.com/your-username/3d-web-agency/issues)
 
 </div>
 
@@ -60,3 +60,37 @@
 └── assets/
     ├── images/        # SVGs, icons, and graphical assets
     └── models/        # 3D geometries and textures
+
+Quick Start
+Since this project runs entirely on standard web technologies, you don't need heavy node modules or complex build pipelines to test it locally.
+
+1. Clone the Repository
+Bash
+git clone [https://github.com/your-username/3d-web-agency.git](https://github.com/your-username/3d-web-agency.git)
+cd 3d-web-agency
+2. Run Locally
+You can simply open index.html in your browser, or use a local development server for the best canvas/3D rendering experience:
+
+Using VS Code Live Server: Right-click index.html and select "Open with Live Server".
+
+Using Python:
+
+Bash
+python -m http.server 8000
+Then navigate to http://localhost:8000 in your web browser.
+
+🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/Cool3DEffect)
+
+Commit your Changes (git commit -m 'Add some Cool3DEffect')
+
+Push to the Branch (git push origin feature/Cool3DEffect)
+
+Open a Pull Request
+
+📝 License
+This project is licensed under the MIT License — see the LICENSE file for details.
