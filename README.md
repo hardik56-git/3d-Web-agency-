@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌌 3D Web Agency — AI Solutions Website
+#  3D Web Agency — AI Solutions Website
 
 **An ultra-modern, interactive landing page featuring immersive 3D animations, interactive physics, and anti-gravity visual effects.**
 
